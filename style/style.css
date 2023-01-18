@@ -13,41 +13,40 @@ body{
     display: flex;
     background-color: rgb(0, 0, 0);
     width: 100vw;
-    height: 125vh;
+    height: 100%;
     flex-direction: column;
     justify-content: space-between;
 }
 .container-bis{
     background-color: rgb(0, 0, 0);
     width: 100vw;
-    height: 125vh;
+    height: 100%;
     flex-direction: column;
     justify-content: space-between;
     z-index: 1;
 }
 .navbar{
     width: 100vw;
-    height: 6vh;
-    background-color: #eeeded;
-    display: flex; 
-    position: relative;
-    
+    height: 7vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
 }
 .logo-navbar{
     z-index: 2;
-    position: relative;
+    display: flex;
+    width: 25vw;
+    justify-content: space-around;
+    align-items: center;
 }
 .logo-navbar img:nth-of-type(1){
-    width: 8vw;
+    width: 8.7vw;
     border: 1px solid  #eeeded;
-    margin: 0.3em 0 0 4em;
-    position: relative;
-    
+    margin: 0.1em 0 0 0em;
 }
-
 .nav-container{
     display: flex;
-    justify-content: space-between;
+    width: 100;
 }
 /*---menu burger for mobile---*/
 .btn{
@@ -228,7 +227,7 @@ body{
     transition:800ms ease all;
 }
 .btn-modif{
-    margin-top: 5em;
+    margin-top: 2em;
     display: flex;
     align-items: center;
 }
@@ -236,8 +235,8 @@ body{
     display: flex;
     justify-content: center;
     width: 100vw;
-    height: 22vh;
-    
+    height: 8vh;
+    align-items: center;
 }
 .btn-5 {
     position: relative;
@@ -285,16 +284,23 @@ body{
     display: block;
     position: absolute;
     left: 1vw;
-    top: 1vh;
+    top: 1.5vh;
     z-index: 5;
   }
   
-  .bar1, .bar2 ,.bar3{
-      width: 3.6vw;
+  .bar1, .bar3{
+      width: 7vw;
       height: 0.5vh;
       background-color: black;
-      margin-top: 0.5vh;
+      margin-top: 0.6vh;
   }
+  .bar2{
+    background-color: #CFB192;
+    width: 4.5vw;
+    height: 0.5vh;
+    margin-top: 0.5vh;
+  }
+
   .show{
     top: 0;
   }
@@ -409,6 +415,7 @@ body{
 /*---Logo---*/
   .rs-logo{
     margin-top: 0.5em;
+    align-items: center;
   }
   .fa-brands{
  
@@ -433,7 +440,6 @@ body{
     flex-direction: column;
     align-items: center;
     position: relative;
-    
 }
 .title{
     align-items: center;
@@ -453,15 +459,19 @@ body{
     border: 1px solid  #eeeded;
     width: 25vw;
 }
-
+.first-paragraph p{
+  margin: 0;
+}
 .first-paragraph li{
     list-style-type: none;
     color: white;
-    width: 50vw;
-    font-size: 1.3em;
+    width: 64vw;
+    font-size: 0.9em;
     text-align: center;
     padding: 0;
 }
+
+li {}
 .first-paragraph ul{
     padding: 0;
 }
@@ -479,7 +489,7 @@ body{
 
 .bottombar{
     color: white;
-    height: 15vh;
+    height: 10vh;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -489,13 +499,23 @@ body{
     list-style-type: none;
     margin-top: 1em;
 }
-.bottombar ul{
-    margin-top: 5em;
+.bottombar ul{  
     padding: 0;
 }
-.bottombar-main{
+.bottombar-main{}   
+.rs-logo{
+    display: flex;
+    justify-content: end;
 }
-
 .rs-logo svg{
-    width: 6vw;
+    width: 5vw;
+    margin-left: 0.4em;
+    margin-right: 0.5em;
+
 }
+ .rs-logo a{
+    color:#eeeded;
+ }
+ @media(min-width:800px){
+
+ }
