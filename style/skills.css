@@ -1,9 +1,15 @@
 @font-face {
-  font-family: "sofiapro-bold";
-  src: url(../fonts/Sofia\ Pro\ Bold\ Az.otf);
- }
-*{
+    font-family: "sofiapro-light";
+    src: url('C:\Users\W10_I\Desktop\stage\Prototype-Site\fonts') 
+   }
+
+   @font-face {
     font-family: "sofiapro-bold";
+    src: url(../fonts/Sofia\ Pro\ Bold\ Az.otf);
+   }
+   
+*{
+     font-family: "sofiapro-bold";
 }
 body{
     margin: 0em;
@@ -41,8 +47,8 @@ body{
 .logo-navbar img:nth-of-type(1){
     width: 17vw;
     border: 1px solid  white;
+    margin: 0.1em 0 0 0em;
     margin-top: 8.5vh;
-    object-fit: contain;
 }
 .nav-container{
     display: flex;
@@ -56,13 +62,12 @@ body{
     /* line-height: 55px; */
     padding: 0;
     margin-top: 0.1em;
-    /* height: 4.8vh; */
+    height: 4.8vh;
     cursor: pointer;
 }
 .btn-1>a{
   text-decoration: none;
   color: black;
-  font-size: 1.9em;
 }
 .btn-1:hover {
     color: #d4b090;
@@ -105,7 +110,6 @@ body{
 .btn-2>a{
     text-decoration: none;
     color: black;
-    font-size: 1.9em;
 }
 .btn-2:hover {
     color: #d4b090;
@@ -150,7 +154,6 @@ body{
 .btn-3>a{
     text-decoration: none;
     color: black;
-    font-size: 1.9em;
 }
 .btn-3:hover {
     color: #d4b090;
@@ -186,7 +189,7 @@ body{
     letter-spacing: 2px;
     position :relative;
     padding: 0;
-    /* line-height: 55px; */
+    line-height: 55px;
     height: 55px;
     cursor: pointer;
     margin-top: 0.2em;
@@ -194,7 +197,6 @@ body{
 .btn-4>a{
     text-decoration: none;
     color: black;
-    font-size: 1.9em;
 }
 .btn-4:hover {
     color: #d4b090;
@@ -278,22 +280,25 @@ body{
     width: 100%;
   }
 .burger{
-    display: block;
     z-index: 5;
+    /*display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;*/
   }
   
   .bar1, .bar3{
+      width: 6vw;
+      height: 3px;
+      background-color: black;
+      margin-top: 0.6vh;
+  }
+  .bar2{
+    background-color: #CFB192;
     width: 6vw;
     height: 3px;
-    background-color: black;
-    margin-top: 0.6vh;
-}
-.bar2{
-  background-color: #CFB192;
-  width: 6vw;
-  height: 3px;
-  margin-top: 0.5vh;
-}
+    margin-top: 0.5vh;
+  }
+
   .show{
     top: 0;
   }
@@ -400,6 +405,7 @@ body{
   aside .btn {
     align-items: center;
     justify-content: center;
+    font-size: 5vh;
   }
   aside .btn-1{
     margin-top: 30vh;
@@ -449,72 +455,215 @@ body{
     justify-content: center;
     display: flex;
     width: 95vw;
-    height: 15em;
-    margin-top: 20%;
 }
 .title ul{
     color: white;
-    /* margin-top: 2em; */
+    margin-top: 4em;
     font-size: 4vh;
     padding: 0;
     text-align-last: center;
 }
-
+.title li{
+    list-style-type: none;
+}
+.title p{
+    margin: 0.3em;
+}
 .space-horizontal{
     border: 1px solid  #eeeded;
     width: 25vw;
-    margin-top: 1%;
 }
+    /*------PARAGRAPH------*/
 .first-paragraph{
-  margin-top: 3%;
+  margin-top: 2em;
 }
 .first-paragraph p{
-  margin: 0;
-  margin-top: 1.5em;
+  margin: 0.3em;
 }
 .first-paragraph li{
     list-style-type: none;
     color: white;
-    width: 64vw;
+    width: 100%;
     font-size: 0.9em;
     text-align: center;
     padding: 0;
 }
-
-li {}
 .first-paragraph ul{
     padding: 0;
 }
-.A-picture{
-    width: 100vw;
-    height: 60vh;
+.second-paragraph p{
+  margin: 0.3em;
+}
+.second-paragraph li{
+  color: white;
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+.second-paragraph ul{
+  padding: 0;
+}
+.third-paragraph{
+    width: 100%;
     display: flex;
     justify-content: center;
+    margin-right: 3%;
+    margin-top: 6em;
+}
+.third-paragraph p{
+  margin: 0.2em;
+}
+.third-paragraph li{
+  color: white;
+  list-style-type: none;
+  padding: 0;
+  font-size: 1.875em;
+}
+.third-paragraph ul{
+  padding: 0;
+}
+.fourth-paragraph{
+    width: 100%;
+    display: contents;
+}
+.fourth-paragraph p{
+  margin: 0.3em;
+  color: white;
+}
+.fourth-paragraph li{
+  padding: 0;
+  list-style-type: none;
+}
+.fourth-paragraph ul{
+  padding: 0;
+}
+.fifth-paragraph{
+    width: 100%;
+    display: contents;
+}
+.fifth-paragraph p{
+  margin: 0.3em;
+}
+.fifth-paragraph li{
+  color: white;
+  list-style-type: none;
+  padding: 0;
+}
+.fifth-paragraph ul{
+  padding: 0;
+}
+.sixth-paragraph{
+  width: 100vw;
+  height: 48vh;
+}
+.top-p{
+  width: 100vw;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.top-p ul{
+  font-size: 1.7em; 
+}
+.top-p li{
+   color: #D5B08E;  
+}
+.top-p2{
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .top-p2 ul{
+    font-size: 1.7em; 
+  }
+  .top-p2 li{
+     color: #D5B08E;  
+  }
+.mid-p{
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .mid-p ul{
+    font-size: 1.7em; 
+  }
+  .mid-p li{
+     color: #D5B08E;  
+  }
+.mid-p2{
+  width: 100vw;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mid-p2 ul{
+  font-size: 1.7em; 
+}
+.mid-p2 li{
+   color: #D5B08E;  
+}
+.bottom-p{
+  width: 100vw;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottom-p ul{
+  font-size: 1.7em; 
+}
+.bottom-p li{
+   color: #D5B08E;  
+}
+/*------END OF PARAGRAPH------*/
+.A-picture{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
 }
 .A-picture  img:nth-of-type(1) {
-    width: 100vw;
+    width: 100%;
     margin-top: 1em;
-    height: 59.5vh;
-    object-fit: contain;
+    object-fit: cover;
+    object-position: right;
 }
 
 .bottombar{
-    color: white; 
-    height: 10vh;
+    color: white;
+    height: 12vh;
     width: 100vw;
     display: flex;
     justify-content: center;
-    justify-self: flex-end;
+    z-index: 2;
+    align-items: center;
+    background-color: black;
 }
 .bottombar li{
     list-style-type: none;
     margin-top: 1em;
-    font-size: 0.8em;
+    font-size: 100%;
+    width: 49vw;
+    text-align: center;
 }
+
 .bottombar ul{  
     padding: 0;
 }
-.bottombar-main{}   
+.bottombar-main{
+    background-color: black;
+    display: flex;
+}   
+.bottombar p{
+  margin: 0;
+}
 .rs-logo{
     display: flex;
     justify-content: end;
@@ -530,12 +679,40 @@ li {}
  .test{
   display: flex;
   align-items: center;
+  justify-content: end;
  }
  /*ghost class for a better site lmao*/
  .vide{
-  width: 6vw;
+    width: 6vw;
+ }
+.arrow{
+  height: 0.1em;
+  width: 3.5em;
+  background: #CFB192;
+  transition: all 0.2s;
+  rotate: 90deg;
+  margin-top: 6em;
+ }
+.arrow::before, .arrow::after{
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0px;
+  height: 0.1em;
+  width: 0.6em;
+  background: #CFB192;
+ }
+
+.arrow::before {
+  transform: rotate(45deg);
+  transform-origin: right bottom;
 }
-/*end of ghost class*/
+
+.arrow::after {
+  transform: rotate(-45deg);
+  transform-origin: right top;
+}
+ /*end of ghost class*/
  @media(min-width:800px){
 
  }
